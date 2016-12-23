@@ -1,0 +1,142 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>Consultorios Odontológicos "Flores"</title><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles/vendor.css"><link rel="stylesheet" href="styles/main.css"><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"></head><body id="app"><div id="fb-root"></div><header><div id="cd-logo"><a href="#"><img src="/img/logo/logotipo-200x98.png" alt="Logo"></a></div><div class="container clearfix"><main class="col-xs-12 col-md-6 col-md-offset-6"><h1>Odontología integral</h1><p class="form-group">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin sapien sapien, sed auctor nulla consequat eu.</p><button class="btn btn-success btn-lg">Beneficios para socios</button></main></div></header><div id="cd-nav"><a href="javascript:;" class="cd-nav-trigger">Menu<span></span></a><nav id="cd-main-nav"><ul class="list-unstyled"><li><a href="#" data-scroll="body"><span class="glyphicon glyphicon-home"></span>&nbsp; Inicio</a></li><li><a href="/#servicios" data-scroll><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp; Servicios</a></li><li><a href="#"><span class="glyphicon glyphicon-apple"></span>&nbsp; Facilidades</a></li><!-- Price table con fondo obrero, passcard y socios --><li><a href="/#team" data-scroll><span class="glyphicon glyphicon-user"></span>&nbsp; Equipo</a></li><li><a href="/#contact" data-scroll><span class="glyphicon glyphicon-envelope"></span>&nbsp; Contacto</a></li></ul></nav></div><section id="servicios" class="container section"><div class="clearfix"><div v-for="servicio in servicios" class="col-xs-12 col-sm-6 col-md-4"><figure class="svc-caption effect-duke form-group"><img :src="servicio.img" alt=""><figcaption><h2>{{servicio.title}}</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><!--<button class="btn btn-sm btn-info">Más información</button>--></figcaption></figure></div></div></section><section id="promos" class="container-fluid section text-center bg-info"><!-- parallax all the way --><h3 class="form-group">¡Déjanos tu correo electrónico para tenerte al tanto de todas nuestras promociones!</h3><div class="row"><div class="clearfix"><form action="" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3"><div class="input-group form-group"><input type="email" name="email" class="input-lg form-control"> <span class="input-group-btn"><button class="btn-info btn-lg btn">Suscribirme</button></span></div></form></div><h4>Y no olvides darle &nbsp;&nbsp;<div class="fb-like" data-href="https://facebook.com/313037469089805/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>&nbsp;&nbsp; a nuestra página de facebook</h4></div></section><section id="team" class="container-fluid section"><div class="container"><div class="text-center"><h2>SOBRE NOSOTROS</h2><blockquote class="form-group"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</em></blockquote><div class="team-meet">EL EQUIPO<div class="down-arrow"></div></div></div><br><div id="team-faces" class="clearfix center-block"><div v-for="pro in pros" class="col-xs-12 col-sm-3"><div class="text-center panel panel-primary"><div class="panel-heading"><img :src="pro.photo" :alt="pro.name" class="center-block img-responsive img-circle"><h4>{{pro.name}}<br><em><small>{{pro.title}}</small></em></h4></div></div></div></div></div></section><section id="reviews" class="container-fluid section bg-info"><div class="row"><h2 class="text-center">Nuestros pacientes dicen...</h2><div class="reel"><blockquote class="text-center" style="width: 100%;display:inline!important"><img src="img/tabarez.jpg" width="55px" height="55px" class="img-responsive center-block img-rounded"><div class="review"><div class="review-rating clearfix"><div class="rate rated"></div><div class="rate rated"></div><div class="rate rated"></div><div class="rate rated"></div><div class="rate unrated"></div></div><p>"<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</em>"</p><footer class="text-right">Oscar W. Tabares en <cite title="Facebook">Facebook</cite></footer></div></blockquote><blockquote class="text-center" style="width: 100%;display:inline!important"><img src="img/tabarez.jpg" width="55px" height="55px" class="img-responsive center-block img-rounded"><div class="review"><div class="review-rating clearfix"><div class="rate rated"></div><div class="rate rated"></div><div class="rate rated"></div><div class="rate rated"></div><div class="rate rated"></div></div><p>"<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Integer posuere erat a ante.</em>"</p><footer class="text-right">Oscar W. Tabares en <cite title="Facebook">Facebook</cite></footer></div></blockquote></div></div></section><section class="container-fluid"><div id="mapa" class="row"></div></section><section id="contact" class="container-fluid section"><div class="container clearfix"><h2 class="text-center">Contáctenos</h2><div class="col-xs-12 col-md-6 form-group"><h3 class="page-header">Consultorios</h3><div class="clearfix"><ul class="list-unstyled form-group col-xs-12 col-sm-6"><li class="form-group"><strong>Las Piedras, Canelones</strong></li><li><address><small class="glyphicon glyphicon-map-marker"></small> &nbsp;&nbsp;<abbr title="Avenida">Av.</abbr> de las Instrucciones del Año XIII 589<br><small class="glyphicon glyphicon-earphone"></small> &nbsp;&nbsp;<a href="tel:23655721">23 655 721</a></address></li></ul><ul class="list-unstyled form-group col-xs-12 col-sm-6"><li class="form-group"><strong>La Paz, Canelones</strong></li><li><address><small class="glyphicon glyphicon-map-marker"></small> &nbsp;&nbsp;Libertad 367, <small><abbr title="Esquina">esq.</abbr> J. Zorrilla de San Martin</small><br><small class="glyphicon glyphicon-earphone"></small> &nbsp;&nbsp;<a href="tel:23624742">23 624 742</a></address></li></ul></div><div class="form-group"><small class="glyphicon glyphicon-time"></small> Horarios: <abbr title="Lunes">Lun</abbr>. a <abbr title="Viernes">Vie</abbr>. de <time>09:00</time> a <time>19:00</time></div></div><div class="col-xs-12 col-md-6 form-group"><div class="row" id="contact-form"><h3 class="page-header">Envíanos un correo electrónico</h3><form action="" @submit.stop.prevent="submitContactForm" class="clearfix"><div class="col-xs-12 col-sm-6"><div class="form-group row"><label for="correo" class="sr-only">Correo electrónico</label><input required type="email" id="correo" name="email" class="input-md form-control" v-model="email" @blur="checkValue('email')" @focus.stop.prevent="selectDefaultText('email', $event)"></div></div><div class="col-xs-12 col-sm-6"><div class="form-group row"><label for="asunto" class="sr-only"></label><input required type="text" id="asunto" name="subject" class="input-md form-control" v-model="subject" @blur="checkValue('subject')" @focus.stop.prevent="selectDefaultText('subject', $event)"></div></div><div class="form-group"><label for="body" class="sr-only"></label><textarea required id="body" rows="3" name="body" class="input-lg form-control" v-model="body" @blur="checkValue('body')" @focus.stop.prevent="selectDefaultText('body', $event)"></textarea></div><div class="form-group clearfix"><button class="btn pull-right btn-success clearfix"><div class="pull-left"><span class="glyphicon glyphicon-send"></span></div>&nbsp;&nbsp; Enviar mensaje</button></div></form></div></div><div class="col-xs-12 text-center"><h3>o ¡Visítanos en facebook!</h3><div class="center-block fb-page" data-href="https://facebook.com/313037469089805/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://facebook.com/313037469089805/" class="fb-xfbml-parse-ignore"><a href="https://facebook.com/313037469089805/">Consultorios Odontológicos &quot;Flores&quot;</a></blockquote></div></div></div></section><footer id="footer">Consultorios Odontológicos Flores © 2017<br>Diseño y desarrollo: <a href="javascript:;">SutilSoft</a></footer><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=1318219504905680";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script><script>window.addEventListener('load', function(){
+      var options = {
+          selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+          selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+          speed: 500, // Integer. How fast to complete the scroll in milliseconds
+          easing: 'easeInOutCubic', // Easing pattern to use
+          offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+          callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      };
+      smoothScroll.init(options);
+      if ( window.location.hash ) {
+        var anchor = document.querySelector( window.location.hash ); // Get the anchor
+        var toggle = document.querySelector( 'a[href*="' + window.location.hash + '"]' ); // Get the toggle (if one exists)
+        smoothScroll.animateScroll( anchor, toggle, options );
+      }
+
+        var flkty = new Flickity( '.reel', {
+          // options
+          cellAlign: 'center',
+          wrapAround: true,
+          cellSelector: 'blockquote',
+          setGallerySize: true,
+          prevNextButtons: false,
+          autoPlay: 5000
+        });
+      });
+
+      function initMap(){
+        preventGMapsFontLoad();
+        var Consultorios = [
+          {name: 'Las Piedras', title: 'Av. de las Instrucciones del Año XIII, 589, Las Piedras', latLang: {lat: -34.727969, lng: -56.215509}},
+          {name: 'La Paz', title: 'Libertad 367, esq. J. Zorrilla de San Martin, La Paz', latLang: {lat: -34.760769, lng: -56.222876}}
+        ];
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('mapa'), {
+          center: Consultorios[0].latLang,
+          disableDefaultUI: true,
+          fullscreenControl: true,
+          scrollwheel: false,
+          zoom: 15
+        });
+
+        map.setOptions({styles: [
+            {
+              "featureType": "poi",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            }
+          ]
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+
+
+        for (var i = Consultorios.length - 1; i >= 0; i--) {
+          // Create a marker and set its position.
+          var marker = new google.maps.Marker({
+            map: map,
+            position: Consultorios[i].latLang,
+            title: Consultorios[i].title,
+            icon: '/img/location.png'
+          });
+
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infowindow.setContent(Consultorios[i].title);
+              infowindow.open(map, marker);
+            }
+          })(marker, i));
+
+
+          // Create the DIV to hold the control and call the CenterControl() constructor
+          // passing in this DIV.
+          var centerControlDiv = document.createElement('div');
+          var centerControl = new CenterControl(centerControlDiv, map, Consultorios[i].latLang, Consultorios[i].name);
+
+          centerControlDiv.index = 1;
+          map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(centerControlDiv);
+        }
+      };
+
+      function CenterControl(controlDiv, map, latLang, name) {
+
+        // Set CSS for the control border.
+        var controlUI = document.createElement('div');
+        controlUI.style.backgroundColor = '#fff';
+        controlUI.style.border = '2px solid #fff';
+        controlUI.style.borderRadius = '3px';
+        controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+        controlUI.style.cursor = 'pointer';
+        controlUI.style.marginBottom = '5px';
+        controlUI.style.marginLeft = '15px';
+        controlUI.style.marginTop = '5px';
+        controlUI.style.textAlign = 'center';
+        controlUI.title = 'Click para ver en el mapa';
+        controlDiv.appendChild(controlUI);
+
+        // Set CSS for the control interior.
+        var controlText = document.createElement('div');
+        controlText.style.color = 'rgb(25,25,25)';
+        controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+        controlText.style.fontSize = '16px';
+        controlText.style.paddingLeft = '5px';
+        controlText.style.paddingRight = '5px';
+        controlText.innerHTML = name;
+        controlUI.appendChild(controlText);
+
+        // Setup the click event listeners: simply set the map to Chicago.
+        controlUI.addEventListener('click', function() {
+          map.setCenter(latLang);
+        });
+
+      }
+
+      function preventGMapsFontLoad() {
+        var head = document.getElementsByTagName('head')[0];
+        // Save the original method
+        var insertBefore = head.insertBefore;
+        // Replace it!
+        head.insertBefore = function (newElement, referenceElement) {
+            if (newElement.href && newElement.href.indexOf('https://fonts.googleapis.com/css?family=Roboto') === 0) {
+                return;
+            }
+            insertBefore.call(head, newElement, referenceElement);
+        };
+      }</script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSt3beOznAVqiDddkBL7pym8Jzy8zR-8k&callback=initMap" async defer="defer"></script></body></html>
